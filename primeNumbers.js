@@ -1,12 +1,18 @@
 // HOW TO CREATE AUTOMATICALLY PRIME NUMBERS FROM 1 TO THE VALUE YOU WANT
 // (i.e. prime numbers from 1 to 100 or 500 or 1000)
 
+// a = valeur inférieure - b = valeur supérieure entre lesquelles trouver les nombres premiers
+var a = 0;
+// var a = Number(prompt("Insérer la valeur inférieure : "));
+var b = 100;
+// var b = Number(prompt("Insérer la valeur supérieure : "));
+
 // GENERATION D'UNE LISTE ORDONNEE DE numbers DE 1 A 100
 var numbers = [];
-for (i=0; i<500; i++) {
+for (i=a; i<b; i++) {
   numbers[i] = i+1;
 }
-console.log("Tableau : "+numbers);
+//console.log("Tableau : "+numbers);
 
 
 /*
@@ -66,5 +72,4 @@ for (j=2; j<numbers.length; j++) {
 //  console.log("Non divisibles par "+j+" : "+numbers+" - nombre de chiffres : "+numbers.length);
 }
 console.log("Nombres premiers : "+numbers+" - nombre de chiffres : "+numbers.length);
-
-// Pour comparaison, liste des nombres premiers tirés d'internet :2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+// Pour comparaison, liste des nombres premiers tirés d'internet : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
